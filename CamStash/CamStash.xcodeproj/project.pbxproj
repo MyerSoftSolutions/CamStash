@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9C8941A1E6F7473002B723D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C894191E6F7473002B723D /* main.m */; };
+		D9C8941D1E6F7473002B723D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C8941C1E6F7473002B723D /* AppDelegate.m */; };
+		D9C894201E6F7473002B723D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C8941F1E6F7473002B723D /* ViewController.m */; };
+		D9C894231E6F7473002B723D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C894211E6F7473002B723D /* Main.storyboard */; };
+		D9C894261E6F7473002B723D /* CamStash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9C894241E6F7473002B723D /* CamStash.xcdatamodeld */; };
+		D9C894281E6F7473002B723D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C894271E6F7473002B723D /* Assets.xcassets */; };
+		D9C8942B1E6F7473002B723D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C894291E6F7473002B723D /* LaunchScreen.storyboard */; };
+		D9C894361E6F7473002B723D /* CamStashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C894351E6F7473002B723D /* CamStashTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9C894321E6F7473002B723D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9C8940D1E6F7473002B723D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9C894141E6F7473002B723D;
+			remoteInfo = CamStash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9C894151E6F7473002B723D /* CamStash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CamStash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C894191E6F7473002B723D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9C8941B1E6F7473002B723D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9C8941C1E6F7473002B723D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9C8941E1E6F7473002B723D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D9C8941F1E6F7473002B723D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D9C894221E6F7473002B723D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9C894251E6F7473002B723D /* CamStash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CamStash.xcdatamodel; sourceTree = "<group>"; };
+		D9C894271E6F7473002B723D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9C8942A1E6F7473002B723D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9C8942C1E6F7473002B723D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9C894311E6F7473002B723D /* CamStashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamStashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C894351E6F7473002B723D /* CamStashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CamStashTests.m; sourceTree = "<group>"; };
+		D9C894371E6F7473002B723D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9C894121E6F7473002B723D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C8942E1E6F7473002B723D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9C8940C1E6F7473002B723D = {
+			isa = PBXGroup;
+			children = (
+				D9C894171E6F7473002B723D /* CamStash */,
+				D9C894341E6F7473002B723D /* CamStashTests */,
+				D9C894161E6F7473002B723D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9C894161E6F7473002B723D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9C894151E6F7473002B723D /* CamStash.app */,
+				D9C894311E6F7473002B723D /* CamStashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9C894171E6F7473002B723D /* CamStash */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8941B1E6F7473002B723D /* AppDelegate.h */,
+				D9C8941C1E6F7473002B723D /* AppDelegate.m */,
+				D9C8941E1E6F7473002B723D /* ViewController.h */,
+				D9C8941F1E6F7473002B723D /* ViewController.m */,
+				D9C894211E6F7473002B723D /* Main.storyboard */,
+				D9C894271E6F7473002B723D /* Assets.xcassets */,
+				D9C894291E6F7473002B723D /* LaunchScreen.storyboard */,
+				D9C8942C1E6F7473002B723D /* Info.plist */,
+				D9C894241E6F7473002B723D /* CamStash.xcdatamodeld */,
+				D9C894181E6F7473002B723D /* Supporting Files */,
+			);
+			path = CamStash;
+			sourceTree = "<group>";
+		};
+		D9C894181E6F7473002B723D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9C894191E6F7473002B723D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9C894341E6F7473002B723D /* CamStashTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9C894351E6F7473002B723D /* CamStashTests.m */,
+				D9C894371E6F7473002B723D /* Info.plist */,
+			);
+			path = CamStashTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9C894141E6F7473002B723D /* CamStash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C8943A1E6F7473002B723D /* Build configuration list for PBXNativeTarget "CamStash" */;
+			buildPhases = (
+				D9C894111E6F7473002B723D /* Sources */,
+				D9C894121E6F7473002B723D /* Frameworks */,
+				D9C894131E6F7473002B723D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CamStash;
+			productName = CamStash;
+			productReference = D9C894151E6F7473002B723D /* CamStash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9C894301E6F7473002B723D /* CamStashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C8943D1E6F7473002B723D /* Build configuration list for PBXNativeTarget "CamStashTests" */;
+			buildPhases = (
+				D9C8942D1E6F7473002B723D /* Sources */,
+				D9C8942E1E6F7473002B723D /* Frameworks */,
+				D9C8942F1E6F7473002B723D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9C894331E6F7473002B723D /* PBXTargetDependency */,
+			);
+			name = CamStashTests;
+			productName = CamStashTests;
+			productReference = D9C894311E6F7473002B723D /* CamStashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9C8940D1E6F7473002B723D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Joel Myers";
+				TargetAttributes = {
+					D9C894141E6F7473002B723D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X557HAPU2P;
+						ProvisioningStyle = Automatic;
+					};
+					D9C894301E6F7473002B723D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X557HAPU2P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D9C894141E6F7473002B723D;
+					};
+				};
+			};
+			buildConfigurationList = D9C894101E6F7473002B723D /* Build configuration list for PBXProject "CamStash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9C8940C1E6F7473002B723D;
+			productRefGroup = D9C894161E6F7473002B723D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9C894141E6F7473002B723D /* CamStash */,
+				D9C894301E6F7473002B723D /* CamStashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9C894131E6F7473002B723D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C8942B1E6F7473002B723D /* LaunchScreen.storyboard in Resources */,
+				D9C894281E6F7473002B723D /* Assets.xcassets in Resources */,
+				D9C894231E6F7473002B723D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C8942F1E6F7473002B723D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9C894111E6F7473002B723D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C894201E6F7473002B723D /* ViewController.m in Sources */,
+				D9C894261E6F7473002B723D /* CamStash.xcdatamodeld in Sources */,
+				D9C8941D1E6F7473002B723D /* AppDelegate.m in Sources */,
+				D9C8941A1E6F7473002B723D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C8942D1E6F7473002B723D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C894361E6F7473002B723D /* CamStashTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9C894331E6F7473002B723D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9C894141E6F7473002B723D /* CamStash */;
+			targetProxy = D9C894321E6F7473002B723D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9C894211E6F7473002B723D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9C894221E6F7473002B723D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9C894291E6F7473002B723D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9C8942A1E6F7473002B723D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9C894381E6F7473002B723D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D9C894391E6F7473002B723D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9C8943B1E6F7473002B723D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X557HAPU2P;
+				INFOPLIST_FILE = CamStash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.forIonicSecurity.CamStash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9C8943C1E6F7473002B723D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X557HAPU2P;
+				INFOPLIST_FILE = CamStash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.forIonicSecurity.CamStash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D9C8943E1E6F7473002B723D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X557HAPU2P;
+				INFOPLIST_FILE = CamStashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.forIonicSecurity.CamStashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CamStash.app/CamStash";
+			};
+			name = Debug;
+		};
+		D9C8943F1E6F7473002B723D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X557HAPU2P;
+				INFOPLIST_FILE = CamStashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.forIonicSecurity.CamStashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CamStash.app/CamStash";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9C894101E6F7473002B723D /* Build configuration list for PBXProject "CamStash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C894381E6F7473002B723D /* Debug */,
+				D9C894391E6F7473002B723D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9C8943A1E6F7473002B723D /* Build configuration list for PBXNativeTarget "CamStash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C8943B1E6F7473002B723D /* Debug */,
+				D9C8943C1E6F7473002B723D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D9C8943D1E6F7473002B723D /* Build configuration list for PBXNativeTarget "CamStashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C8943E1E6F7473002B723D /* Debug */,
+				D9C8943F1E6F7473002B723D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D9C894241E6F7473002B723D /* CamStash.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D9C894251E6F7473002B723D /* CamStash.xcdatamodel */,
+			);
+			currentVersion = D9C894251E6F7473002B723D /* CamStash.xcdatamodel */;
+			path = CamStash.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D9C8940D1E6F7473002B723D /* Project object */;
+}
