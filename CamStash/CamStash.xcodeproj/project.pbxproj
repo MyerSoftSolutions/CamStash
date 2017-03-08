@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		D9C8941A1E6F7473002B723D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C894191E6F7473002B723D /* main.m */; };
 		D9C8941D1E6F7473002B723D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C8941C1E6F7473002B723D /* AppDelegate.m */; };
-		D9C894201E6F7473002B723D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C8941F1E6F7473002B723D /* ViewController.m */; };
 		D9C894231E6F7473002B723D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C894211E6F7473002B723D /* Main.storyboard */; };
 		D9C894261E6F7473002B723D /* CamStash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9C894241E6F7473002B723D /* CamStash.xcdatamodeld */; };
 		D9C894281E6F7473002B723D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C894271E6F7473002B723D /* Assets.xcassets */; };
 		D9C8942B1E6F7473002B723D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C894291E6F7473002B723D /* LaunchScreen.storyboard */; };
 		D9C894361E6F7473002B723D /* CamStashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C894351E6F7473002B723D /* CamStashTests.m */; };
+		D9C894421E70C2FA002B723D /* CSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C894411E70C2FA002B723D /* CSHomeViewController.m */; };
+		D9C894451E70C3A4002B723D /* CSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C894441E70C3A4002B723D /* CSCollectionViewCell.m */; };
+		D9C894481E70C768002B723D /* CSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C894471E70C768002B723D /* CSDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +34,6 @@
 		D9C894191E6F7473002B723D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9C8941B1E6F7473002B723D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D9C8941C1E6F7473002B723D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D9C8941E1E6F7473002B723D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D9C8941F1E6F7473002B723D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D9C894221E6F7473002B723D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9C894251E6F7473002B723D /* CamStash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CamStash.xcdatamodel; sourceTree = "<group>"; };
 		D9C894271E6F7473002B723D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +42,12 @@
 		D9C894311E6F7473002B723D /* CamStashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamStashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C894351E6F7473002B723D /* CamStashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CamStashTests.m; sourceTree = "<group>"; };
 		D9C894371E6F7473002B723D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9C894401E70C2FA002B723D /* CSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHomeViewController.h; sourceTree = "<group>"; };
+		D9C894411E70C2FA002B723D /* CSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHomeViewController.m; sourceTree = "<group>"; };
+		D9C894431E70C3A4002B723D /* CSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCollectionViewCell.h; sourceTree = "<group>"; };
+		D9C894441E70C3A4002B723D /* CSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCollectionViewCell.m; sourceTree = "<group>"; };
+		D9C894461E70C768002B723D /* CSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDetailViewController.h; sourceTree = "<group>"; };
+		D9C894471E70C768002B723D /* CSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +91,13 @@
 			children = (
 				D9C8941B1E6F7473002B723D /* AppDelegate.h */,
 				D9C8941C1E6F7473002B723D /* AppDelegate.m */,
-				D9C8941E1E6F7473002B723D /* ViewController.h */,
-				D9C8941F1E6F7473002B723D /* ViewController.m */,
-				D9C894211E6F7473002B723D /* Main.storyboard */,
+				D9C894401E70C2FA002B723D /* CSHomeViewController.h */,
+				D9C894411E70C2FA002B723D /* CSHomeViewController.m */,
+				D9C894461E70C768002B723D /* CSDetailViewController.h */,
+				D9C894471E70C768002B723D /* CSDetailViewController.m */,
+				D9C894491E70C77A002B723D /* Cells */,
 				D9C894271E6F7473002B723D /* Assets.xcassets */,
+				D9C894211E6F7473002B723D /* Main.storyboard */,
 				D9C894291E6F7473002B723D /* LaunchScreen.storyboard */,
 				D9C8942C1E6F7473002B723D /* Info.plist */,
 				D9C894241E6F7473002B723D /* CamStash.xcdatamodeld */,
@@ -112,6 +121,15 @@
 				D9C894371E6F7473002B723D /* Info.plist */,
 			);
 			path = CamStashTests;
+			sourceTree = "<group>";
+		};
+		D9C894491E70C77A002B723D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D9C894431E70C3A4002B723D /* CSCollectionViewCell.h */,
+				D9C894441E70C3A4002B723D /* CSCollectionViewCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,8 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9C894201E6F7473002B723D /* ViewController.m in Sources */,
+				D9C894451E70C3A4002B723D /* CSCollectionViewCell.m in Sources */,
+				D9C894421E70C2FA002B723D /* CSHomeViewController.m in Sources */,
 				D9C894261E6F7473002B723D /* CamStash.xcdatamodeld in Sources */,
+				D9C894481E70C768002B723D /* CSDetailViewController.m in Sources */,
 				D9C8941D1E6F7473002B723D /* AppDelegate.m in Sources */,
 				D9C8941A1E6F7473002B723D /* main.m in Sources */,
 			);
@@ -420,6 +440,7 @@
 				D9C8943C1E6F7473002B723D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9C8943D1E6F7473002B723D /* Build configuration list for PBXNativeTarget "CamStashTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +449,7 @@
 				D9C8943F1E6F7473002B723D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
