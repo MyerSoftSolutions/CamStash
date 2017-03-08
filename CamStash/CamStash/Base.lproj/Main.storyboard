@@ -78,6 +78,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="EW8-Et-cdi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="b2h-60-bwW"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.94509803920000002" green="1" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>

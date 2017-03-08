@@ -9,7 +9,7 @@
 #import "CSHomeViewController.h"
 #import "CSCollectionViewCell.h"
 
-@interface CSHomeViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface CSHomeViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate>
 @property (strong, nonatomic) IBOutlet UICollectionView *stashCollectionView;
 @property (strong, nonatomic) NSMutableArray *filesArray;
 
@@ -27,6 +27,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)takePic:(UIBarButtonItem *)sender {
+    
 }
 
 #pragma mark - UICollectionViewDelegate Methods
