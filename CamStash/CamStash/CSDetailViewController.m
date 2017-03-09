@@ -7,11 +7,14 @@
 //
 
 #import "CSDetailViewController.h"
+#import "CSFileManager.h"
+#import "CSPicObject.h"
 
 @interface CSDetailViewController ()
 
 @end
 
+NSUInteger idxRow;
 @implementation CSDetailViewController
 
 - (void)viewDidLoad {
@@ -23,8 +26,12 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    self.picImage.image = (UIImage *)[self.picArray objectAtIndex:self.idxPath.row];
-//    self.picFileLabel.text = 
+    idxRow = self.idxPath.row;
+    self.picArray =  [CSFileManager sharedManager].picArray;
+    NSLog(@"%@", self.picArray);
+    CSPicObject *picObj = (CSPicObject *)[self.picArray objectAtIndex:idxRow];
+    self.picImage.image = picObj.pic;
+    self.picFileLabel.text = picObj.filename;
 }
 
 - (void)didReceiveMemoryWarning {
