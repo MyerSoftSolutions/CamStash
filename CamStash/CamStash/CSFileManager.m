@@ -7,6 +7,7 @@
 //
 
 #import "CSFileManager.h"
+#import "CSPicObject.h"
 
 @implementation CSFileManager
 
@@ -23,6 +24,7 @@ static CSFileManager *sharedFileMan = nil;
     self = [super init];
     if (self) {
         self.ionicFilesArray = [NSMutableArray new];
+        self.picArray = [NSMutableArray new];
         [self setupIonicPhotos];
     }
     return self;
@@ -36,26 +38,34 @@ static CSFileManager *sharedFileMan = nil;
         [[NSFileManager defaultManager] createDirectoryAtPath:dataPath withIntermediateDirectories:NO attributes:nil error:&error];
     } else {
         [self readIonicPhotos];
-        self.ionicFilesArray = (NSMutableArray *)[[NSFileManager defaultManager] contentsOfDirectoryAtPath:dataPath error:NULL];
     }
 }
 
 //Write Images to Documents/IonicPhotos folder
 -(void)saveToIonicPhotos:(UIImage *)image withFileName:(NSString *) filename{
-    NSString *dataPath = [[self documentsPath] stringByAppendingPathComponent:@"/IonicPhotos"];
+    NSString *filePath = [[self ionicPhotosPath] stringByAppendingFormat:@"%@", [NSString stringWithFormat:@"/%@.jpg", filename]];
+    if  (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        NSData *data = UIImageJPEGRepresentation(image, 1.0);
+        [data writeToFile:filePath atomically:YES];
+    }
     
-    NSString *fileName = [dataPath stringByAppendingFormat:@"%@", [NSString stringWithFormat:@"/%@.jpg", filename]];
-    NSData *data = UIImageJPEGRepresentation(image, 1.0);
-    [data writeToFile:fileName atomically:YES];
-
 }
 
 //Read Images from Documents/IonicPhotos folder and fill array
 -(void)readIonicPhotos {
-    
     if ([[NSFileManager defaultManager] fileExistsAtPath:[self ionicPhotosPath]]) {
          self.ionicFilesArray = (NSMutableArray *)[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[self ionicPhotosPath] error:NULL];
         
+        for (NSString *str in self.ionicFilesArray) {
+            NSString *filePath = [[self ionicPhotosPath] stringByAppendingFormat:@"%@", [NSString stringWithFormat:@"/%@", str]];
+            if  ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+                CSPicObject *picObj = [[CSPicObject alloc] init];
+                picObj.pic = [UIImage imageWithContentsOfFile:filePath];
+                picObj.filename = str;
+                [self.picArray addObject:picObj];
+            }
+
+        }
     }
 }
 
@@ -63,7 +73,6 @@ static CSFileManager *sharedFileMan = nil;
 -(NSString *) documentsPath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDir = [paths objectAtIndex:0];
-    NSLog(@"%@", documentsDir);
     
     return documentsDir;
 }
@@ -72,7 +81,6 @@ static CSFileManager *sharedFileMan = nil;
     NSString *dataPath = [[self documentsPath] stringByAppendingPathComponent:@"/IonicPhotos"];
     
     return dataPath;
-
 }
 
 

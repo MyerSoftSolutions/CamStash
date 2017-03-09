@@ -19,6 +19,8 @@
 		D9C894481E70C768002B723D /* CSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C894471E70C768002B723D /* CSDetailViewController.m */; };
 		D9C8944C1E71AEDC002B723D /* CSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C8944B1E71AEDC002B723D /* CSFileManager.m */; };
 		D9C8944D1E71AEDC002B723D /* CSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C8944B1E71AEDC002B723D /* CSFileManager.m */; };
+		D9C894501E71E629002B723D /* CSPicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C8944F1E71E629002B723D /* CSPicObject.m */; };
+		D9C894511E71E629002B723D /* CSPicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C8944F1E71E629002B723D /* CSPicObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		D9C894471E70C768002B723D /* CSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDetailViewController.m; sourceTree = "<group>"; };
 		D9C8944A1E71AEDC002B723D /* CSFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFileManager.h; sourceTree = "<group>"; };
 		D9C8944B1E71AEDC002B723D /* CSFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFileManager.m; sourceTree = "<group>"; };
+		D9C8944E1E71E629002B723D /* CSPicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPicObject.h; sourceTree = "<group>"; };
+		D9C8944F1E71E629002B723D /* CSPicObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPicObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				D9C8941C1E6F7473002B723D /* AppDelegate.m */,
 				D9C8944A1E71AEDC002B723D /* CSFileManager.h */,
 				D9C8944B1E71AEDC002B723D /* CSFileManager.m */,
+				D9C8944E1E71E629002B723D /* CSPicObject.h */,
+				D9C8944F1E71E629002B723D /* CSPicObject.m */,
 				D9C894401E70C2FA002B723D /* CSHomeViewController.h */,
 				D9C894411E70C2FA002B723D /* CSHomeViewController.m */,
 				D9C894461E70C768002B723D /* CSDetailViewController.h */,
@@ -243,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9C894451E70C3A4002B723D /* CSCollectionViewCell.m in Sources */,
+				D9C894501E71E629002B723D /* CSPicObject.m in Sources */,
 				D9C894421E70C2FA002B723D /* CSHomeViewController.m in Sources */,
 				D9C8944C1E71AEDC002B723D /* CSFileManager.m in Sources */,
 				D9C894261E6F7473002B723D /* CamStash.xcdatamodeld in Sources */,
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9C894361E6F7473002B723D /* CamStashTests.m in Sources */,
+				D9C894511E71E629002B723D /* CSPicObject.m in Sources */,
 				D9C8944D1E71AEDC002B723D /* CSFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,8 @@
 @interface CSFileManager : NSObject
 
 @property (nonatomic, strong) NSMutableArray *ionicFilesArray;
+@property (nonatomic, strong) NSMutableArray *picArray;
+
 
 +(CSFileManager *)sharedManager;
 
