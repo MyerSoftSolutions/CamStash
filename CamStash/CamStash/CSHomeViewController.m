@@ -101,10 +101,11 @@
     UIAlertAction *saveAction = [UIAlertAction actionWithTitle:@"Save" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
         UITextField *field = (UITextField *)alert.textFields.firstObject;
         [self.fileManager saveToIonicPhotos:chosenImage withFileName: field.text];
+        [alert dismissViewControllerAnimated:YES completion:nil];
     }];
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-        [self dismissViewControllerAnimated:YES completion:nil];
+        [alert dismissViewControllerAnimated:YES completion:nil];
     }];
     
     [alert addAction:saveAction];
@@ -113,7 +114,7 @@
     [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
         
         NSUInteger count = self.fileManager.ionicFilesArray.count;
-        textField.text = [NSString stringWithFormat:@"Image%lu", (unsigned long)count];
+        textField.text = [NSString stringWithFormat:@"Image_%lu", (unsigned long)count];
         textField.highlighted = YES;
     }];
     
