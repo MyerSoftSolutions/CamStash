@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.picArray = [NSMutableArray new];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    self.picImage.image = (UIImage *)[self.picArray objectAtIndex:self.idxPath.row];
+//    self.picFileLabel.text = 
 }
 
 - (void)didReceiveMemoryWarning {

@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *picImage;
 @property (strong, nonatomic) IBOutlet UILabel *picFileLabel;
+@property (strong, nonatomic) NSMutableArray *picArray;
+@property (strong, nonatomic) NSIndexPath *idxPath;
 
 
 @end

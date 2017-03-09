@@ -27,7 +27,11 @@
                                 <color key="backgroundColor" red="0.9021777504106504" green="0.98998719453811646" blue="0.19637670616135353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="CamStash" id="zEY-d3-H4z">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="1Wq-rw-wet"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="1Wq-rw-wet">
+                                            <connections>
+                                                <action selector="takePic:" destination="BYZ-38-t0r" id="6hr-rg-Xbe"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -74,7 +78,7 @@
                                         <connections>
                                             <outlet property="fileNameLabel" destination="S6m-CG-RxD" id="CzO-rC-h5c"/>
                                             <outlet property="thumbImage" destination="1bU-O7-ecV" id="r0I-2p-ezF"/>
-                                            <segue destination="7rV-EB-Miq" kind="show" id="eQQ-qM-PFB"/>
+                                            <segue destination="7rV-EB-Miq" kind="show" identifier="ShowDetailSegue" id="eQQ-qM-PFB"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
