@@ -28,7 +28,6 @@ NSUInteger idxRow;
     
     idxRow = self.idxPath.row;
     self.picArray =  [CSFileManager sharedManager].picArray;
-    NSLog(@"%@", self.picArray);
     CSPicObject *picObj = (CSPicObject *)[self.picArray objectAtIndex:idxRow];
     self.picImage.image = picObj.pic;
     self.picFileLabel.text = picObj.filename;
@@ -38,19 +37,30 @@ NSUInteger idxRow;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)swipeLeft:(UISwipeGestureRecognizer *)sender {
+    if ((idxRow + 1) <= (self.picArray.count - 1)) {
+        idxRow += 1;
+        CSPicObject *picObj = (CSPicObject *)[self.picArray objectAtIndex:idxRow];
+        [self.picImage setImage: picObj.pic];
+        self.picFileLabel.text = picObj.filename;
+    }
+   }
+
+- (IBAction)swipeRight:(UISwipeGestureRecognizer *)sender {
+    if ((idxRow) > 0) {
+        idxRow -= 1;
+        CSPicObject *picObj = (CSPicObject *)[self.picArray objectAtIndex:idxRow];
+        [self.picImage setImage: picObj.pic];
+        self.picFileLabel.text = picObj.filename;
+    }
+
+    
+}
+
 - (IBAction)dismissDetail:(UIButton *)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -59,7 +59,6 @@
         
         CSDetailViewController *vc = segue.destinationViewController;
         vc.picArray = self.filesArray;
-        NSLog(@"%@", vc.picArray);
         vc.idxPath = idx;
         
     }

@@ -39,27 +39,27 @@
                                 <rect key="frame" x="16" y="60" width="343" height="623"/>
                                 <color key="backgroundColor" red="0.53360658080000001" green="1" blue="0.7935908009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bWe-dA-6Ln">
-                                    <size key="itemSize" width="145" height="142"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="itemSize" width="145" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="8"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CSCollectionViewCell" id="DZf-Fu-g3a" customClass="CSCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="142"/>
+                                        <rect key="frame" x="10" y="8" width="145" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="145" height="142"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="145" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6m-CG-RxD">
-                                                    <rect key="frame" x="8" y="8" width="129" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6m-CG-RxD">
+                                                    <rect key="frame" x="8" y="8" width="129" height="34"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1bU-O7-ecV">
-                                                    <rect key="frame" x="16" y="43" width="112" height="79"/>
+                                                    <rect key="frame" x="16" y="51" width="112" height="79"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="112" id="cxC-lm-RuM"/>
                                                         <constraint firstAttribute="height" constant="79" id="nqF-pD-acC"/>
@@ -78,10 +78,14 @@
                                         <connections>
                                             <outlet property="fileNameLabel" destination="S6m-CG-RxD" id="CzO-rC-h5c"/>
                                             <outlet property="thumbImage" destination="1bU-O7-ecV" id="r0I-2p-ezF"/>
-                                            <segue destination="7rV-EB-Miq" kind="show" identifier="ShowDetailSegue" id="eQQ-qM-PFB"/>
+                                            <segue destination="7rV-EB-Miq" kind="showDetail" identifier="ShowDetailSegue" id="eQQ-qM-PFB"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Elb-3V-P5l">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="8"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="EW8-Et-cdi"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="b2h-60-bwW"/>
@@ -131,7 +135,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2z-Py-GGq">
                                 <rect key="frame" x="50" y="514" width="274" height="31"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.53360658080000001" green="1" blue="0.7935908009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbA-85-DWG">
@@ -175,11 +179,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="56U-O7-09n" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="8Lu-6L-LYT">
                     <connections>
+                        <action selector="swipeLeft:" destination="7rV-EB-Miq" id="qjG-Kh-vo3"/>
                         <outlet property="delegate" destination="7rV-EB-Miq" id="H0h-F0-osW"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="B6Q-vj-bW8">
                     <connections>
+                        <action selector="swipeRight:" destination="7rV-EB-Miq" id="yky-wq-QBU"/>
                         <outlet property="delegate" destination="7rV-EB-Miq" id="M4O-oJ-Hqm"/>
                     </connections>
                 </swipeGestureRecognizer>
