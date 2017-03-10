@@ -14,9 +14,7 @@
 @property (nonatomic, strong) NSMutableArray *ionicFilesArray;
 @property (nonatomic, strong) NSMutableArray *picArray;
 
-
 +(CSFileManager *)sharedManager;
-
 -(void)readIonicPhotos;
 -(void)saveToIonicPhotos:(UIImage *)image withFileName:(NSString *) filename;
 -(NSString *)documentsPath;

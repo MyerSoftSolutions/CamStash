@@ -103,10 +103,7 @@
 				D9C8944B1E71AEDC002B723D /* CSFileManager.m */,
 				D9C8944E1E71E629002B723D /* CSPicObject.h */,
 				D9C8944F1E71E629002B723D /* CSPicObject.m */,
-				D9C894401E70C2FA002B723D /* CSHomeViewController.h */,
-				D9C894411E70C2FA002B723D /* CSHomeViewController.m */,
-				D9C894461E70C768002B723D /* CSDetailViewController.h */,
-				D9C894471E70C768002B723D /* CSDetailViewController.m */,
+				D9C894521E72F9C3002B723D /* ViewControllers */,
 				D9C894491E70C77A002B723D /* Cells */,
 				D9C894271E6F7473002B723D /* Assets.xcassets */,
 				D9C894211E6F7473002B723D /* Main.storyboard */,
@@ -142,6 +139,17 @@
 				D9C894441E70C3A4002B723D /* CSCollectionViewCell.m */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		D9C894521E72F9C3002B723D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9C894401E70C2FA002B723D /* CSHomeViewController.h */,
+				D9C894411E70C2FA002B723D /* CSHomeViewController.m */,
+				D9C894461E70C768002B723D /* CSDetailViewController.h */,
+				D9C894471E70C768002B723D /* CSDetailViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

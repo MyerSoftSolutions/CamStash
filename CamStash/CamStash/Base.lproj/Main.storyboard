@@ -40,13 +40,13 @@
                                 <color key="backgroundColor" red="0.53360658080000001" green="1" blue="0.7935908009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bWe-dA-6Ln">
                                     <size key="itemSize" width="145" height="150"/>
-                                    <size key="headerReferenceSize" width="0.0" height="8"/>
+                                    <size key="headerReferenceSize" width="0.0" height="12"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="17" minY="0.0" maxX="17" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CSCollectionViewCell" id="DZf-Fu-g3a" customClass="CSCollectionViewCell">
-                                        <rect key="frame" x="10" y="8" width="145" height="150"/>
+                                        <rect key="frame" x="17" y="12" width="145" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="145" height="150"/>
@@ -83,7 +83,7 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Elb-3V-P5l">
-                                    <rect key="frame" x="0.0" y="0.0" width="343" height="8"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="12"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionReusableView>
                                 <connections>
@@ -105,10 +105,28 @@
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="noPicsView" destination="xfz-YP-B5R" id="TM2-I5-uVn"/>
                         <outlet property="stashCollectionView" destination="NLk-1E-Luc" id="Ojg-LJ-jJN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view tag="10" contentMode="scaleToFill" id="xfz-YP-B5R">
+                    <rect key="frame" x="0.0" y="0.0" width="301" height="332"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No Stashed Pics Yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gby-Y3-ojp">
+                            <rect key="frame" x="36" y="40" width="229" height="21"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.53360658080000001" green="1" blue="0.7935908009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="gby-Y3-ojp" firstAttribute="centerX" secondItem="xfz-YP-B5R" secondAttribute="centerX" id="Nnw-9N-zzX"/>
+                        <constraint firstItem="gby-Y3-ojp" firstAttribute="top" secondItem="xfz-YP-B5R" secondAttribute="top" constant="40" id="TDu-jE-2Mi"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="93.599999999999994" y="37.331334332833585"/>
         </scene>

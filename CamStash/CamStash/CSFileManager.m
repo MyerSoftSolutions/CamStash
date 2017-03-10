@@ -47,8 +47,12 @@ static CSFileManager *sharedFileMan = nil;
     if  (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
         NSData *data = UIImageJPEGRepresentation(image, 1.0);
         [data writeToFile:filePath atomically:YES];
+    } else {
+        CSPicObject *picObj = [[CSPicObject alloc] init];
+        picObj.pic = image;
+        picObj.filename = filePath;
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"FileNameClashNotification" object:picObj];
     }
-    
 }
 
 //Read Images from Documents/IonicPhotos folder and fill array
@@ -64,7 +68,6 @@ static CSFileManager *sharedFileMan = nil;
                 picObj.filename = str;
                 [self.picArray addObject:picObj];
             }
-
         }
     }
 }
@@ -79,7 +82,6 @@ static CSFileManager *sharedFileMan = nil;
 
 -(NSString *) ionicPhotosPath {
     NSString *dataPath = [[self documentsPath] stringByAppendingPathComponent:@"/IonicPhotos"];
-    
     return dataPath;
 }
 
