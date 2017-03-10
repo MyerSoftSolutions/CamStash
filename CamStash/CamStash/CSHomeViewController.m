@@ -47,6 +47,16 @@
     }
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    if  ([[[UIApplication sharedApplication] keyWindow] viewWithTag:10] && self.filesArray.count != 0) {
+        UIView *noPicsView = [[[UIApplication sharedApplication] keyWindow] viewWithTag:10];
+        [noPicsView removeFromSuperview];
+    }
+
+}
+
 -(void)presentFileOverwrite:(CSPicObject *)picObj{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Overwrite file?" message:@"Press OK to overwrite" preferredStyle:UIAlertControllerStyleAlert];
     
