@@ -53,6 +53,7 @@
     UIAlertAction *saveAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
         NSData *data = UIImageJPEGRepresentation(picObj.pic, 1.0);
         [data writeToFile:picObj.filename atomically:YES];
+        UIImageWriteToSavedPhotosAlbum(picObj.pic, nil, nil, nil);
 
         [alert dismissViewControllerAnimated:YES completion:nil];
     }];

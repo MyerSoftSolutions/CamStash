@@ -47,6 +47,7 @@ static CSFileManager *sharedFileMan = nil;
     if  (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
         NSData *data = UIImageJPEGRepresentation(image, 1.0);
         [data writeToFile:filePath atomically:YES];
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     } else {
         CSPicObject *picObj = [[CSPicObject alloc] init];
         picObj.pic = image;
